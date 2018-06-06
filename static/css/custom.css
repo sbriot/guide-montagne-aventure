@@ -1,0 +1,73 @@
+
+a {
+  opacity: 1;
+  border-bottom: none;
+}
+#footer li{
+  color:white;
+}
+/*******************
+*
+*     HEADER : MENU PAGE ACCUEIL
+*
+**********************/
+
+#header a > img {
+  margin-top : 10px;
+  height: 50px;
+}
+#header.alt{
+  
+  -webkit-transition: opacity 1.5s ease;
+  -o-transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
+  -webkit-transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+     transition-delay: 0.15s;
+}
+@media screen and (max-width: 736px){
+    #header .logo {
+        padding: 0 0.5em;
+    }
+}
+
+
+
+/****************
+*     SLIDER FORMATIONS
+******************/
+@-webkit-keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  -webkit-animation: 30s slidy infinite;
+          animation: 30s slidy infinite;
+}

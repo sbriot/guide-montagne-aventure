@@ -1,0 +1,400 @@
+/* HOME CONTENT */
+.wrapper-v3{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+}
+@supports (display: grid) {
+    .wrapper-v3{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
+.itemW3-2{
+  margin:25px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: b;
+}
+.itemW3-2 h3{
+  font-weight:800;
+  font-style:normal;
+  font-size: 28px;
+  color: #b2d225 !important;
+  line-height: 20px;
+  font-weight:bold;
+  margin-bottom: 0.5em;
+
+}
+.itemW3-2 blockquote{
+  font-style:normal;
+}
+
+/* SPECIFIC TAXE PAGE CONTENT */
+#taxe_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 1fr;
+      grid-template-columns: 150px 1fr;
+}
+.zone1{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; /* contexte sur le parent */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; /* direction d'affichage verticale */
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* alignement vertical */
+  background-color:#afba08;
+  overflow: hidden ;
+  text-align:center;
+}
+.zone1 p{
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-size:6.5vh;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+}
+.zone2 {
+  padding: 10vh;
+}
+.zone2 h5{
+  color:#afba08;
+  text-align:center;
+}
+.zone2 img{
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  #taxe_grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .zone2 {
+    padding: 1vh;
+  }
+  .zone2 img{
+    width: 100%;
+    height: auto;
+  }
+  .zone1 p{
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    font-size: 20px;
+  }
+}
+
+
+/***** PAGE GRID *****/
+
+#page_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 1fr 1fr;
+  grid-template-columns: 150px 1fr 1fr;
+  background-color: black;
+}
+#page_grid h5{
+  font-size: 1.3em;
+  color: #ffffff !important;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+.delimiter{
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  width: 80px;
+  margin-bottom: 8px;
+}
+.bandeau{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; /* contexte sur le parent */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; /* direction d'affichage verticale */
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* alignement vertical */
+  overflow: hidden ;
+    max-width: 150px;
+}
+.bandeau p{
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  /*font-size:6.5vh;*/
+  font-size:5vh;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+}
+.col1 {
+  padding: 10px;
+}
+.col1 p{
+  font-size: 1em;
+}
+.col1 h1 {
+  margin-top:50%;
+  color:white;
+  white-space: nowrap;
+  font-size:3vw;
+}
+.col2 {
+  /*display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;*/
+  /*justify-items: center;*/
+}
+.col2 img{
+  width:250px;
+}
+
+/* .col2 .row3*/
+.intitule h2{
+  margin:0;
+  font-size: 3em;
+  line-height: 1.3em;
+  color:black;
+}
+.intitule p{
+  text-justify: inter-word;
+  font-size: 1.4em;
+  color:black;
+}
+.link h2{
+  margin:0;
+  font-size: 2em;
+  line-height: 1.3em;
+  margin-top:5%;
+
+  color:white;
+}
+.link a{
+  color:black;
+  line-height: 4;
+  /*white-space: nowrap;*/
+}
+#texte_annonce{
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+  animation: 4s linear 0s infinite alternate move_eye;
+  /*white-space: nowrap;*/
+}
+#texte_annonce h2{
+  font-size: 2em;
+  line-height: 1.3em;
+  color:black;
+}
+@-webkit-keyframes move_eye { from { padding-left:-10%; } to { padding-left:20%; }  }
+@keyframes move_eye { from { padding-left:-10%; } to { padding-left:20%; }  }
+/*.slide_forma{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}*/
+@media screen and (max-width: 768px) {
+  #page_grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #texte_annonce{
+    -webkit-animation: none;
+            animation: none;
+  }
+  #texte_annonce h2{
+    font-size: 1em;
+    text-align: center;
+  }
+  .col2 {
+    padding: 1vh;
+  }
+  .col2 img{
+    width: 100%;
+    height: auto;
+  }
+  .row3 img{
+    width:150px;
+  }
+  .bandeau {
+    min-height: 0 !important;
+  }
+  .bandeau p{
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    font-size: 20px;
+    text-align: center;
+  }
+}
+/******************
+*
+*CSS Grid : Choix entre deux formations
+*
+********************/
+/*.wrapper-choix {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100vh, auto);
+}
+.choix-one{
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  justify-self: start;
+}
+.choix-two{
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}*/
+.col2 {
+  padding: 10px;
+}
+.col2 h1 {
+  margin-top:50%;
+  color:white;
+  white-space: nowrap;
+  font-size:3vw;
+}
+
+/************
+*
+* CSS Grid : fiche formation en pied de page
+*
+***************/
+#plan_forma{
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  background-color: black;
+  grid-template: [main-left]   "nav_forma  fiche_forma" 1fr  [main-right]
+                 / 250px 1fr;
+
+}
+.pdts_forma{
+  grid-area: fiche_forma;
+}
+.plan{
+  grid-area: nav_forma;
+}
+@media (max-width: 800px) {
+  #formation_grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .bandeau {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+  }
+  .bandeau p{
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    margin: 0vh;
+    font-size: 5vw;
+  }
+  #plan_forma {
+    grid-template: "fiche_forma";
+  }
+  #plan {
+    display: none;
+  }
+  .details_forma h1 {
+    font-size: 6vw;
+  }
+}
+/**
+Contact Page Layout
+**/
+.row3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(1fr));
+}
+.row3 .contact-method{
+  text-align: center;
+}
+.one{
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+.two{
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+.three{
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+@media screen and (max-width: 768px){
+  .row3 {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .one{
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .two{
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .three{
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+}
+
+/***********
+*
+* Demande de RDV Layout
+*
+************/
+label{
+  text-transform:none;
+  margin-bottom:0;
+}
+.col1 h4{
+  color:#b2d225;
+}

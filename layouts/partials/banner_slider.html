@@ -1,0 +1,29 @@
+{{ "<!-- Slider Home -->" | safeHTML}}
+<section id="banner_slider" class="major">
+
+      <div id="slider_home">
+        <img class="mySlides w3-animate-fading" src="/img/slider/slider0.jpg">
+        <img class="mySlides w3-animate-fading" src="/img/slider/slider1.jpg">
+        <img class="mySlides w3-animate-fading" src="/img/slider/slider2.jpg">
+        <img class="mySlides w3-animate-fading" src="/img/slider/slider3.jpg">
+        <img class="mySlides w3-animate-fading" src="/img/slider/slider4.jpg">
+      </div>
+
+      <div id="text_home" class="inner" >
+          
+          <img id="logo_carre" src="/img/logoWeb.png" width="600px" style="margin-top:30px;">
+     
+          <div class="content">
+              <p style="margin-bottom: 5px;">{{ .Site.Params.Banner.subtitle }}</p>
+              <ul class="actions">
+                 
+                  <li><a href="vielycee" class="button" aria-labelledby="Decouvrir Activites">{{ .Site.Params.Banner.buttonText }}</a></li>
+                  
+              </ul>
+              
+          </div>
+
+
+        </div>
+
+</section>
