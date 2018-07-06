@@ -1,5 +1,6 @@
 # Site settings
-baseURL = "http://localhost:1313/"
+#baseURL = "http://localhost:1313/"
+baseURL = "https://quirky-johnson-80c0d2.netlify.com"
 languageCode = "en-us"
 title = "Guide Montagne Aventure"
 theme = "forty"
