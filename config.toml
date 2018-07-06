@@ -178,7 +178,7 @@ disqusShortname = ""
     phone = "+33 (0)6 21 25 31 47"
 
     [[params.contact.address]]
-    title = "Addresse"
+    title = "Adresse"
     street = "Street"
     city = "Corse, Balagne"
     country = "France"
