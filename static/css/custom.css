@@ -17,7 +17,7 @@ a {
   height: 50px;
 }
 #header.alt{
-  
+
   -webkit-transition: opacity 1.5s ease;
   -o-transition: opacity 1.5s ease;
   transition: opacity 1.5s ease;
@@ -30,11 +30,13 @@ a {
         padding: 0 0.5em;
     }
 }
-
+#footer {
+  padding : 40px;
+}
 
 
 /****************
-*     SLIDER FORMATIONS
+*     SLIDER Produits
 ******************/
 @-webkit-keyframes slidy {
 0% { left: 0%; }

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+    {{ partial "header.html" . }}
+
+    <body>
+
+    {{ "<!-- Wrapper -->" | safeHTML }}
+        <div id="wrapper">
+
+            {{ partial "nav.html" . }}
+
+        {{ "<!-- Main -->" | safeHTML }}
+      <div id="main">
+
+
+        <!-- Portfolio Item Heading -->
+        <div class="row" style="margin:10px;margin-bottom:0px">
+            <div class="col-lg-12">
+                <h1 class="page-produit">{{ .Title }}
+                    <small>{{ .Description }}</small>
+                </h1>
+            </div>
+
+
+
+            <div class="col-md-8" style="height:300px;">
+							{{ if .Params.image }}
+									<img style="height:100%" class="img-responsive" src="{{ .Site.Params.baseURL }}/img/{{ .Params.imagePrez }}" alt="" />
+							{{ end }}
+            </div>
+
+            <div class="col-md-4">
+              {{ if ne .Params.acti1 "" }}
+                <h3> {{ .Params.acti1 }}</h3>
+                <p> {{ .Params.desc1 }} </p>
+              {{ end }}
+
+              {{ if ne .Params.acti2 "" }}
+                <h3> {{ .Params.acti2 }}</h3>
+                <p> {{ .Params.desc2 }} </p>
+              {{ end }}
+
+              {{ if ne .Params.acti3 "" }}
+                <h3> {{ .Params.acti3 }}</h3>
+                <p> {{ .Params.desc3 }} </p>
+              {{ end }}
+              <h3>Détails </h3>
+                <ul>
+                  {{ range .Params.details }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+                <h4><a href="http://www.guidemontagneaventure.fr/index.html#contact">Tarifs : nous contacter</a></h4>
+
+
+
+              </div>
+            </div>
+        <!-- /.row -->
+
+				{{ if .Site.Params.Tiles.enable }}
+					{{ partial "tile.html" . }}
+				{{ end }}
+
+
+    </div>
+            {{ "<!-- Disqus Inject -->" | safeHTML }}
+                {{ if .Site.DisqusShortname }}
+                  {{ partial "disqus.html" . }}
+                {{ end }}
+            </div>
+
+        {{ "<!-- Footer -->" | safeHTML}}
+            {{ if .Site.Params.footer.enable }}
+                {{ partial "footer.html" . }}
+            {{ end }}
+        </div>
+
+    {{ "<!-- Scripts -->" | safeHTML}}
+        {{ partial "js.html" . }}
+
+    </body>
+</html>

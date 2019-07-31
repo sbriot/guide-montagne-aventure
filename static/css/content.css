@@ -33,72 +33,6 @@
   font-style:normal;
 }
 
-/* SPECIFIC TAXE PAGE CONTENT */
-#taxe_grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 150px 1fr;
-      grid-template-columns: 150px 1fr;
-}
-.zone1{
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; /* contexte sur le parent */
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; /* direction d'affichage verticale */
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; /* alignement vertical */
-  background-color:#afba08;
-  overflow: hidden ;
-  text-align:center;
-}
-.zone1 p{
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  font-size:6.5vh;
-  font-weight: bold;
-  color: black;
-  white-space: nowrap;
-}
-.zone2 {
-  padding: 10vh;
-}
-.zone2 h5{
-  color:#afba08;
-  text-align:center;
-}
-.zone2 img{
-  width: 100%;
-  height: auto;
-}
-@media screen and (max-width: 768px) {
-  #taxe_grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .zone2 {
-    padding: 1vh;
-  }
-  .zone2 img{
-    width: 100%;
-    height: auto;
-  }
-  .zone1 p{
-    -webkit-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
-    font-size: 20px;
-  }
-}
-
-
 /***** PAGE GRID *****/
 
 #page_grid {
@@ -397,4 +331,12 @@ label{
 }
 .col1 h4{
   color:#b2d225;
+}
+/***********
+*
+* Product  page layout
+*
+************/
+small{
+  font-size: 0.5em;
 }

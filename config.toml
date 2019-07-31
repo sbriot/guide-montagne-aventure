@@ -24,7 +24,7 @@ disqusShortname = ""
   description = "Your description"
 
   # Link custom assets relative to /static
-  custom_css = ["css/custom.css", "css/content.css", "css/formations.css", "css/slider.css"]
+  custom_css = ["css/custom.css", "css/content.css", "css/formations.css", "css/slider.css", "css/bootstrap-grid.css"]
   custom_js  = ["js/custom.js"]
   favicon    = "favicon.ico"
 
@@ -50,8 +50,8 @@ disqusShortname = ""
 
     [[params.navigation.links]]
       name = "Les Activités"
-      url = "blogs/ipsum"
-      
+      url = "blogs"
+
     [[params.navigation.links]]
       name = "News"
       url = "blogs"
@@ -59,7 +59,7 @@ disqusShortname = ""
     [[params.navigation.links]]
       name = "Contact"
       url = "blogs"
-   
+
 
     [[params.navigation.links]]
       name = "Elements"
@@ -97,38 +97,38 @@ disqusShortname = ""
   [params.tiles]
     enable = true
     # Display your showcases here.
-    
+
     [[params.tiles.showcase]]
       title = "Escalade"
       subtitle = "Ecole, Grande Voie"
       image = "pic01.jpg"
-      url = "blogs/aliquam"
+      url = "./escalade"
 
     [[params.tiles.showcase]]
       title = "Alpinisme"
       subtitle = "Grandes Courses"
       image = "pic02.jpg"
-      url = "blogs/tempus"
+      url = "./alpinisme"
 
     [[params.tiles.showcase]]
       title = "Ski"
       subtitle = "Pente Raide, Mont Blanc"
       image = "pic03.jpg"
-      url = "blogs/magna"
+      url = "./ski"
 
     [[params.tiles.showcase]]
       title = "Canyon"
       subtitle = "Canyoning en Corse"
       image = "pic04.jpg"
-      url = "blogs/ipsum"
+      url = "./canyon"
 
     [[params.tiles.showcase]]
       title = "Formations"
       subtitle = "Cordée Autonome"
       image = "pic05.jpg"
-      url = "blogs/ipsum"
+      url = "./cordee-autonome"
 
-    
+
     # You can make more showcases by copy and pasting the code above
 
   [params.blog]
@@ -180,8 +180,8 @@ disqusShortname = ""
 
     [[params.contact.address]]
     title = "Adresse"
-    street = "Street"
-    city = "Corse, Balagne"
+    street = "Balagne"
+    city = "Corse"
     country = "France"
 
   # Footer section
@@ -204,7 +204,7 @@ disqusShortname = ""
       icon = "fa-instagram"
       url= "https://www.instagram.com"
       label = "Instagram"
-    
+
 #    [[params.footer.social]]
  #     icon = "fa-github"
   #    url= "https://www.github.com"
