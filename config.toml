@@ -1,7 +1,7 @@
 # Site settings
 #baseURL = "http://localhost:1313/"
 baseURL = "https://quirky-johnson-80c0d2.netlify.com"
-languageCode = "en-us"
+languageCode = "fr-FR"
 title = "Guide Montagne Aventure"
 theme = "forty"
 
@@ -20,7 +20,7 @@ disqusShortname = ""
   # CSS class.
 
   # Provide your metadata here.
-  name = "Your name"
+  name = "Jean Baptiste Castellani - Guide Montagne Aventure"
   description = "Your description"
 
   # Link custom assets relative to /static
@@ -29,7 +29,7 @@ disqusShortname = ""
   favicon    = "favicon.ico"
 
   # Just a custom image variable, please define it in .md files for content.
-  image = ""
+  image = "pic02.jpg"
 
   # 404 error customization
   [params.error404]
@@ -45,12 +45,12 @@ disqusShortname = ""
     # logo = "logo.png"
 
     [[params.navigation.links]]
-      name = "Home"
+      name = "Accueil"
       url = "#"
 
     [[params.navigation.links]]
       name = "Les Activités"
-      url = "blogs"
+      url = "activites"
 
     [[params.navigation.links]]
       name = "News"
@@ -58,7 +58,7 @@ disqusShortname = ""
 
     [[params.navigation.links]]
       name = "Contact"
-      url = "blogs"
+      url = "mailto:info@guidemontagneaventure.fr"
 
 
     [[params.navigation.links]]
@@ -102,31 +102,31 @@ disqusShortname = ""
       title = "Escalade"
       subtitle = "Ecole, Grande Voie"
       image = "pic01.jpg"
-      url = "./escalade"
+      url = "activites/escalade"
 
     [[params.tiles.showcase]]
       title = "Alpinisme"
       subtitle = "Grandes Courses"
       image = "pic02.jpg"
-      url = "./alpinisme"
+      url = "activites/alpinisme"
 
     [[params.tiles.showcase]]
       title = "Ski"
       subtitle = "Pente Raide, Mont Blanc"
       image = "pic03.jpg"
-      url = "./ski"
+      url = "activites/ski"
 
     [[params.tiles.showcase]]
       title = "Canyon"
       subtitle = "Canyoning en Corse"
       image = "pic04.jpg"
-      url = "./canyon"
+      url = "activites/canyon"
 
     [[params.tiles.showcase]]
       title = "Formations"
       subtitle = "Cordée Autonome"
       image = "pic05.jpg"
-      url = "./cordee-autonome"
+      url = "activites/cordee-autonome"
 
 
     # You can make more showcases by copy and pasting the code above
@@ -145,7 +145,7 @@ disqusShortname = ""
     image = "leguide.jpg"
     subtitle = "Originaire de Corse, j'aurais grand plaisir à vous faire découvrir l'escalade, l'alpinisme et le ski en Corse. J’ai d’abord travaillé plusieurs années en charpente avant de me consacrer pleinement à ma passion pour les voyages et la montagne. Premier voyage montagne en Nouvelle-Zélande, puis c'est en Europe que je réalise la plupart de mes courses entre la France, la Suisse et l'Italie. Un voyage de trois semaines au Yosemite au milieu des bigs walls a bien renforcé mon expérience. Egalement passionné de ski et moniteur, je vous propose un large choix de sorties à ski. Profitez de mon expérience pour progresser techniquement durant les journées. Pour moi, le plus grand plaisir c'est de pouvoir former des personnes de façon à les rendre autonomes, transmettre mon savoir et partager ma passion."
     buttonText = "Contacter"
-    url = "blogs"
+    url = "mailto:info@guidemontagneaventure.fr"
 
 
   # Contact section

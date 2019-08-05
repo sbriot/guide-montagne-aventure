@@ -69,14 +69,14 @@
                 {{ if .Site.DisqusShortname }}
                   {{ partial "disqus.html" . }}
                 {{ end }}
-            </div>
+
 
         {{ "<!-- Footer -->" | safeHTML}}
             {{ if .Site.Params.footer.enable }}
                 {{ partial "footer.html" . }}
             {{ end }}
         </div>
-
+  </div>
     {{ "<!-- Scripts -->" | safeHTML}}
         {{ partial "js.html" . }}
 
