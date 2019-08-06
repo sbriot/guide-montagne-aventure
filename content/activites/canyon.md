@@ -1,5 +1,5 @@
 ---
-title: Canyoning en Corse TEST
+title: Canyoning en Corse
 description: Descente de rivières, ...
 slug: ''
 image: ''
