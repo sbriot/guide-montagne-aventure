@@ -1,0 +1,25 @@
+---
+label: Article de blog
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: slug
+  label: slug
+- type: file
+  name: image
+  label: image
+- type: text
+  name: keywords
+  label: keywords
+- type: list
+  name: categories
+  label: categories
+- type: datetime
+  name: date
+  label: date
