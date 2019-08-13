@@ -2,26 +2,38 @@
 *CHOIX DE FORMATIONS HOME
 *******************/
 .tiles article{
+
+}
+#one article{
   padding-left:1.2em;
   -webkit-animation: mymove1 4s forwards; /* Safari 4.0 - 8.0 */
   animation: mymove1 4s forwards;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
-@media (min-width: 640px) {
-  .tiles article,.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2){
-    width:20%;
-  }
-}
 .tiles article h3{
+
+}
+#one article h3{
   font-size: 1.7em;
   line-height: 1.30;
 }
 .tiles header.major > p {
-    font-size: 1.2em;
-    letter-spacing: 0.1em;
-    width:200px;
+
+}
+#one header.major > p {
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  width:200px;
 }
 .tiles .major{
+
+}
+#one .major{
   text-align: left;
+}
+@media (min-width: 640px) {
+  .tiles article,.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2){
+    width:20%;
+  }
 }
