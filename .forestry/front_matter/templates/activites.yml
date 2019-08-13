@@ -14,9 +14,6 @@ fields:
 - type: file
   name: image
   label: image
-- type: file
-  name: imagePrez
-  label: imagePrez
 - type: text
   name: keywords
   label: keywords
