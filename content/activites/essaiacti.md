@@ -12,6 +12,6 @@ image = "/uploads/blogs/pic08.jpg"
 keywords = ""
 slug = "essaiActi"
 title = "EssaiACti"
-type = ""
+type = "partials_produit"
 
 +++
