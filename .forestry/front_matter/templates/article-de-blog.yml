@@ -1,11 +1,11 @@
 ---
-label: Activites
+label: Article de blog
 hide_body: true
 fields:
 - type: text
   name: title
   label: title
-- type: text
+- type: textarea
   name: description
   label: description
 - type: text
@@ -20,24 +20,6 @@ fields:
 - type: list
   name: categories
   label: categories
-- type: text
-  name: acti1
-  label: acti1
-- type: textarea
-  name: desc1
-  label: desc1
-- type: text
-  name: acti2
-  label: acti2
-- type: text
-  name: desc2
-  label: desc2
-- type: list
-  name: details
-  label: details
 - type: datetime
   name: date
   label: date
-- type: text
-  name: type
-  label: type
