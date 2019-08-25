@@ -2,7 +2,7 @@
 title: Canyoning en Corse
 description: Descente de rivières, ...
 slug: ''
-image: ''
+image: "pic02.jpg"
 keywords: ''
 categories:
 - Canyon

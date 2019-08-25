@@ -28,20 +28,26 @@
                         </div>
                     </section>
 
+
+
                     {{ "<!-- Header -->" | safeHTML }}
-                        <section  class="tiles" id="two" >
-                            {{ range .Site.Params.Tiles.showcase }}
-                            <article style="width:50%">
-                                <span class="image">
-                                    <img src="{{ .Site.Params.baseURL }}/img/{{ .image }}" alt="" />
-                                </span>
-                                <header class="major">
-                                    <h3><a href="{{ .url | absURL }}" class="link">{{ .title }}</a></h3>
-                                    <p>{{ .subtitle }}</p>
-                                </header>
-                            </article>
-                            {{ end }}
-                        </section>
+                    <section  class="tiles" id="two" >
+                    {{ range .Pages }}
+
+                      <article style="width:50%">
+                          <span class="image">
+                              <img src="/img/{{ .Params.image }}" alt="" />
+                          </span>
+                          <header class="major">
+                              <h3><a href="{{.Permalink}}" class="link">{{ .Title }}</a></h3>
+                              <p>{{ .Description }}</p>
+                          </header>
+                      </article>
+
+                      {{ end }}
+
+
+                    </section>
                 </div>
 
             {{ "<!-- Footer -->" | safeHTML}}

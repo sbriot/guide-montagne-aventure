@@ -100,7 +100,7 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "Escalade"
-      subtitle = "Ecole, Grande Voie"
+      #subtitle = "Ecole, Grande Voie"
       image = "pic01.jpg"
       url = "activites/escalade"
 

@@ -2,7 +2,7 @@
 title: Cordée Autonome
 description: Formation cordée autonome, Stage 5 jours ou 10 jours, ...
 slug: ''
-image: pic10.jpg
+image: "pic10.jpg"
 keywords: ''
 categories:
 - Cordée Autonome

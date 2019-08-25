@@ -2,7 +2,7 @@
 title: "Ski"
 description: "Ski en Pente Raide, Ski de Randonnée, Ski Mont-Blanc"
 slug: ""
-image: ""
+image: "pic02.jpg"
 keywords: ""
 categories:
     - "Ski"

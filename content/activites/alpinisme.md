@@ -1,8 +1,9 @@
 ---
 title: "Alpinisme"
 description: "Ascension du Mont-Blanc, Grandes Courses"
-slug: ""
-image: pic02.jpg
+image: "pic02.jpg"
+
+slug:
 keywords: ""
 categories:
     - "Alpinisme"

@@ -1,8 +1,9 @@
 ---
 title: "Escalade"
+subtitle: "Ecole, Grande Voie"
 description: "Ecole d'escalade, Grandes Voies Equipées, Terrain d'Aventure"
 slug: ""
-image: pic01.jpg
+image: "pic01.jpg"
 
 keywords: ""
 categories:
