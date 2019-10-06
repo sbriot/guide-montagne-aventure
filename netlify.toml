@@ -3,3 +3,9 @@
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.40.3"
+  
+  # A redirect rule with all the supported properties
+[[redirects]]
+  from = "https://competent-sammet-26e999.netlify.com/*"
+  to = "https://www.lycee-lasalle-levier.org/:splat"
+ 
